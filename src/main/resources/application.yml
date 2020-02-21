@@ -22,12 +22,12 @@ spring:
           password: Root@2019
           driver-class-name: com.mysql.cj.jdbc.Driver
           url: jdbc:mysql://47.96.31.59:3306/jiebao_shiro_jwt?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-        # 数据源-2，名称为 test
-#        test:
-#          username: root
-#          password: Root@2019
-#          driver-class-name: com.mysql.cj.jdbc.Driver
-#          url: jdbc:mysql://47.96.31.59:3306/jiebao_test?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+        # 数据源-2，名称为 crm
+        crm:
+          username: root
+          password: Root@2019
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://47.96.31.59:3306/jiebao_shiro_crm?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
   aop:
     proxy-target-class: true
 
