@@ -4,12 +4,15 @@ package com.jiebao.platfrom.crm.controller;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.dynamic.datasource.annotation.DS;
+import com.jiebao.platfrom.common.controller.BaseController;
+import com.jiebao.platfrom.common.domain.QueryRequest;
 import com.jiebao.platfrom.common.exception.JiebaoException;
 import com.jiebao.platfrom.crm.domain.CrmData;
 import com.jiebao.platfrom.crm.service.ICrmDataService;
 import com.jiebao.platfrom.crm.util.ApiKit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -30,7 +33,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/crm/data")
 @DS("crm")  //切换数据源
-public class CrmDataController {
+public class CrmDataController extends BaseController {
 
     @Autowired
     private ICrmDataService iCrmDataService;
@@ -43,6 +46,11 @@ public class CrmDataController {
 
     //默认一次读取数据条数
     private final String pageSize = "50";
+
+    @GetMapping(value = "/crmDataList")
+    public Map<String, Object> crmDataList(QueryRequest request, CrmData crmData) {
+        return getDataTable(iCrmDataService.getCrmDataList(request, crmData));
+    }
 
     /**
      * 抓取所有需要更新的数据接口信息
@@ -131,7 +139,7 @@ public class CrmDataController {
     }
 
     /**
-     * 处理json数据
+     * 处理部分json数据与数据库的匹配
      * @param jsonObject
      * @return
      */
