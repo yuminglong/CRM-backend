@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.io.Serializable;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
@@ -127,5 +128,20 @@ public class CrmContractOrder extends Model<CrmContractOrder> implements Seriali
      */
     private String htRemark;
 
+    /**
+     * 已收款金额
+     */
+    @TableField(exist = false)
+    private BigDecimal afterMoney;
 
+    /**
+     * 待收款金额
+     */
+    @TableField(exist = false)
+    private BigDecimal waitMoney;
+
+    @TableField(exist = false)
+    private transient String createTimeFrom;
+    @TableField(exist = false)
+    private transient String createTimeTo;
 }

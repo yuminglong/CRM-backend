@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.jiebao.platfrom.gen.mapper.CrmBillRecordMapper">
+<mapper namespace="com.jiebao.platfrom.crm.dao.CrmBillRecordMapper">
+
+    <select id="findBillDetail" resultType="crmBillRecord" >
+        SELECT  cbr.bill_parentid,cbr.bill_money,STR_TO_DATE(cbr.bill_date,'%Y/%m/%d %H:%i:%s') as 'bill_date',cbr.bill_no,cbr.bill_hkid,cbr.bill_hkstate,cbr.bill_remark
+         FROM crm_bill_record cbr WHERE 1=1
+
+        <if test="crmBillRecord.createTimeFrom != null and crmBillRecord.createTimeFrom !=''">
+            And STR_TO_DATE(cbr.bill_date,'%Y/%m/%d %H:%i:%s') &gt; #{crmBillRecord.createTimeFrom}
+        </if>
+        <if test="crmBillRecord.createTimeTo!= null and crmBillRecord.createTimeTo !=''">
+            And STR_TO_DATE(cbr.bill_date,'%Y/%m/%d %H:%i:%s') &lt; #{crmBillRecord.createTimeTo}
+        </if>
+        ORDER BY cbr.bill_date DESC
+
+
+    </select>
+
 
 </mapper>
