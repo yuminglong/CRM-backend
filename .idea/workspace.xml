@@ -2,314 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5ed2626-e10d-43e7-8a18-8ebda2dcaa90" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/exception/JiebaoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/web/controller/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/FebsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/JiebaoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/annotation/IsCron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/annotation/IsCron.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/annotation/Limit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/annotation/Limit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/annotation/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/annotation/Log.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/aspect/LimitAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/aspect/LimitAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/aspect/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/aspect/LogAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/authentication/JWTFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/authentication/JWTFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/authentication/JWTToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/authentication/JWTToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/authentication/JWTUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/authentication/JWTUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/authentication/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/authentication/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/authentication/ShiroRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/authentication/ShiroRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/config/AsyncExecutorPoolConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/config/AsyncExecutorPoolConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/config/MybatisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/config/P6spySqlFormatConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/config/P6spySqlFormatConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/config/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/controller/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/converter/TimeConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/converter/TimeConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/domain/ActiveUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/domain/ActiveUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/domain/FebsConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/domain/JiebaoConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/domain/FebsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/domain/JiebaoResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/domain/LimitType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/domain/LimitType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/domain/QueryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/domain/QueryRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/domain/RedisInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/domain/RedisInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/domain/RegexpConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/domain/RegexpConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/domain/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/domain/Tree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/domain/router/RouterMeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/domain/router/RouterMeta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/domain/router/VueRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/domain/router/VueRouter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/exception/FebsException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/exception/LimitAccessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/exception/LimitAccessException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/exception/RedisConnectException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/exception/RedisConnectException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/exception/TokenTimeoutException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/exception/TokenTimeoutException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/function/CacheSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/function/CacheSelector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/function/JedisExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/function/JedisExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/generator/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/generator/CodeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/properties/FebsProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/properties/JiebaoProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/properties/ShiroProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/properties/ShiroProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/runner/CacheInitRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/runner/CacheInitRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/runner/StartedUpRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/runner/StartedUpRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/service/CacheService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/service/CacheService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/service/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/service/RedisService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/service/impl/CacheServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/service/impl/CacheServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/service/impl/RedisServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/service/impl/RedisServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/task/CacheTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/task/CacheTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/utils/AddressUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/utils/AddressUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/utils/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/utils/DateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/utils/EncryptUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/utils/EncryptUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/utils/FebsUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/utils/JiebaoUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/utils/HttpContextUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/utils/HttpContextUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/utils/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/utils/HttpUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/utils/IPUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/utils/IPUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/utils/MD5Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/utils/MD5Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/utils/SortUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/utils/SortUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/utils/SpringContextUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/utils/SpringContextUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/utils/TreeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/utils/TreeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/validator/CronValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/validator/CronValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/job/config/ScheduleConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/job/config/ScheduleConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/job/controller/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/job/controller/JobController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/job/controller/JobLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/job/controller/JobLogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/job/dao/JobLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/job/dao/JobLogMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/job/dao/JobMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/job/dao/JobMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/job/domain/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/job/domain/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/job/domain/JobLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/job/domain/JobLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/job/service/JobLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/job/service/JobLogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/job/service/JobService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/job/service/JobService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/job/service/impl/JobLogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/job/service/impl/JobLogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/job/service/impl/JobServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/job/service/impl/JobServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/job/task/TestTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/job/task/TestTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/job/util/ScheduleJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/job/util/ScheduleJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/job/util/ScheduleRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/job/util/ScheduleRunnable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/job/util/ScheduleUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/job/util/ScheduleUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/controller/DeptController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/controller/DictController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/controller/DictController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/controller/LogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/controller/LogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/controller/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/controller/RedisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/controller/RedisController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/controller/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/controller/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/dao/DeptMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/dao/DeptMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/dao/DictMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/dao/DictMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/dao/LogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/dao/LogMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/dao/LoginLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/dao/LoginLogMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/dao/MenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/dao/MenuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/dao/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/dao/RoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/dao/RoleMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/dao/RoleMenuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/dao/TestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/dao/TestMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/dao/UserConfigMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/dao/UserConfigMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/dao/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/dao/UserRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/dao/UserRoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/domain/Dept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/domain/Dept.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/domain/Dict.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/domain/Dict.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/domain/LoginLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/domain/LoginLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/domain/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/domain/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/domain/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/domain/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/domain/RoleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/domain/RoleMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/domain/SysLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/domain/SysLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/domain/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/domain/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/domain/UserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/domain/UserConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/domain/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/domain/UserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/manager/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/manager/UserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/DeptService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/DictService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/DictService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/LogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/LogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/LoginLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/LoginLogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/MenuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/RoleMenuServie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/RoleMenuServie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/TestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/UserConfigService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/UserConfigService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/UserRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/UserRoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/impl/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/impl/DeptServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/impl/DictServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/impl/DictServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/impl/LogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/impl/LogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/impl/LoginLogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/impl/LoginLogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/impl/MenuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/impl/RoleMenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/impl/RoleMenuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/impl/RoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/impl/TestServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/impl/UserConfigServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/impl/UserConfigServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/impl/UserRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/impl/UserRoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/web/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/web/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/web/controller/MovieController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/web/controller/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/web/controller/WeatherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/job/JobMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/job/JobMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/DeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/system/DeptMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/LoginLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/system/LoginLogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/system/MenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/system/RoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/system/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/UserRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/system/UserRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spy.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spy.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.postcssrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/build/build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/build/check-versions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/build/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/build/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/build/vue-loader.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/build/webpack.base.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/build/webpack.dev.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/build/webpack.prod.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/config/dev.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/config/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/config/prod.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/config/test.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/JIEBAO.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/checkbox/ColorCheckbox.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/checkbox/ImgCheckbox.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/datetime/RangeDate.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/exception/ExceptionPage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/exception/typeConfig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/menu/Contextmenu.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/menu/SiderMenu.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/menu/menu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/setting/Setting.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/setting/SettingItem.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/setting/StyleItem.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/tool/Drawer.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/store/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/store/modules/account.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/store/modules/setting.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/utils/color.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/utils/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/utils/device.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/utils/install.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/utils/localstorage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/utils/permissionDirect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/utils/request.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/utils/utils.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/HomePage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/common/EmptyPageView.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/common/GlobalFooter.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/common/GlobalHeader.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/common/GlobalLayout.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/common/HeadInfo.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/common/HeaderAvatar.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/common/MenuView.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/common/PageContent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/common/PageLayout.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/common/PageView.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/error/403.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/error/404.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/error/500.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/login/Common.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/login/Login.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/login/Regist.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/monitor/Httptrace.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/monitor/JvmInfo.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/monitor/Online.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/monitor/RedisInfo.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/monitor/RedisTerminal.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/monitor/SystemInfo.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/monitor/SystemLog.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/monitor/TomcatInfo.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/others/Excel.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/others/ImportResult.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/personal/Profile.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/personal/UpdateAvatar.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/personal/UpdatePassword.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/personal/UpdateProfile.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/quartz/job/Job.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/quartz/job/JobAdd.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/quartz/job/JobEdit.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/quartz/log/JobLog.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/dept/Dept.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/dept/DeptAdd.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/dept/DeptEdit.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/dept/DeptInputTree.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/dict/Dict.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/dict/DictAdd.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/dict/DictEdit.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/menu/ButtonAdd.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/menu/ButtonEdit.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/menu/Icon.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/menu/Icons.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/menu/Menu.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/menu/MenuAdd.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/menu/MenuEdit.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/role/Role.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/role/RoleAdd.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/role/RoleEdit.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/role/RoleInfo.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/user/User.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/user/UserAdd.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/user/UserEdit.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/user/UserInfo.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/system/user/UserInfo.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/web/DailyArticle.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/web/MovieComing.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/web/MovieHot.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/web/Weather.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/17e420c250804efe904a09a33796d5a10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/17e420c250804efe904a09a33796d5a16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/19034103295190235.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/1d22f3e41d284f50b2c8fc32e0788698.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/20180414165754.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/20180414165815.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/20180414165821.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/20180414165827.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/20180414165834.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/20180414165840.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/20180414165846.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/20180414165855.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/20180414165909.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/20180414165914.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/20180414165920.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/20180414165927.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/20180414165936.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/20180414165942.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/20180414165947.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/20180414165955.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/20180414170003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/2dd7a2d09fa94bf8b5c52e5318868b4d9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/2dd7a2d09fa94bf8b5c52e5318868b4df.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/496b3ace787342f7954b7045b8b06804.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/595ba7b05f2e485eb50565a50cb6cc3c.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/5997fedcc7bd4cffbd350b40d1b5b9824.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/5997fedcc7bd4cffbd350b40d1b5b987.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/87d8194bc9834e9f8f0228e9e530beb1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/8f5b60ef00714a399ee544d331231820.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/964e40b005724165b8cf772355796c8c.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/BiazfanxmamNRoxxVxka.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/WhxKECPNujWoWEFNdnJE.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/a3b10296862e40edb811418d64455d00.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/a43456282d684e0b9319cf332f8ac468.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/bba284ac05b041a8b8b0d1927868d5c9x.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/c7c4ee7be3eb4e73a19887dc713505145.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/cnrhVkzwxjPwAaCfPbdc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/default.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/ff698bb2d25c4d218b3256b46c706ece.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/gaOngJwsRYRaVAuXXcmB.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/jZUIxmJycoymBprLOUbT.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/avatar/ubnKSIfAJTxIgXOKlciN.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/file/city.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/img/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/img/logo-blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/img/side-bar-dark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/img/side-bar-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/img/side-bar-light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/img/side-bar-top.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/less/Color.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/static/less/Common.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/yarn-error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sql/febs.sql" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/domain/CrmOrderMonth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmContractOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmContractOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/dao/CrmContractOrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/dao/CrmContractOrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/service/ICrmContractOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/service/ICrmContractOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/service/impl/CrmContractOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/service/impl/CrmContractOrderServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -318,13 +18,50 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/controller/UserController.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="407">
+                    <caret line="173" column="54" selection-start-line="173" selection-start-column="54" selection-end-line="173" selection-end-column="54" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/domain/User.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="242">
+                    <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+              <entry file="jar://F:/mavencangku/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar!/javax/servlet/http/HttpServletResponse.class">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="-699">
+                    <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/JiebaoApplication.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/domain/CrmOrderMonth.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="418">
+              <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -333,29 +70,97 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/ValidationMessages.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmDataController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="6" selection-start-column="6" selection-end-column="6" />
+            <state relative-caret-position="220">
+              <caret line="33" column="21" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spy.properties">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="jar://F:/mavencangku/com/wuwenze/ExcelKit/2.0.7/ExcelKit-2.0.7.jar!/com/wuwenze/poi/ExcelKit.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1062">
+              <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmCustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+            <state relative-caret-position="220">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmContractOrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="613">
+              <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmCashbackRecordController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmCashbackPlanController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmBillRecordController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmPaymentBillController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmPaymentPlanController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -370,6 +175,7 @@
       <find>MrBird</find>
       <find>mr</find>
       <find>Sinliz</find>
+      <find>excel</find>
     </findStrings>
     <replaceStrings>
       <replace>com.jiebao.platfrom</replace>
@@ -385,12 +191,11 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/properties/FebsProperties.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/utils/JiebaoUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/properties/JiebaoProperties.java" />
@@ -402,6 +207,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/config/P6spySqlFormatConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/banner.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/utils/MD5Util.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/service/impl/CrmProjectServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/config/DataSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/service/ICrmContractOrderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/service/impl/CrmContractOrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/dao/CrmContractOrderMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmContractOrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/domain/CrmOrderMonth.java" />
       </list>
     </option>
   </component>
@@ -409,7 +222,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="D:/work/apache-maven-3.3.9" />
-        <option name="userSettingsFile" value="D:\work\apache-maven-3.3.9\conf\settings.xml" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -425,14 +238,20 @@
           <item name="jiebao_shiro_jwt" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="jiebao_shiro_jwt" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="780" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="53" />
+    <option name="y" value="61" />
+    <option name="width" value="1940" />
+    <option name="height" value="953" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -441,54 +260,167 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="CRM-backend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-              <item name="error" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="CRM-backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="CRM-backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="CRM-backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="CRM-backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRM-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jiebao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRM-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jiebao" type="462c0819:PsiDirectoryNode" />
               <item name="platfrom" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="CRM-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jiebao" type="462c0819:PsiDirectoryNode" />
+              <item name="platfrom" type="462c0819:PsiDirectoryNode" />
+              <item name="crm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRM-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jiebao" type="462c0819:PsiDirectoryNode" />
+              <item name="platfrom" type="462c0819:PsiDirectoryNode" />
+              <item name="crm" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRM-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jiebao" type="462c0819:PsiDirectoryNode" />
+              <item name="platfrom" type="462c0819:PsiDirectoryNode" />
+              <item name="crm" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRM-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jiebao" type="462c0819:PsiDirectoryNode" />
+              <item name="platfrom" type="462c0819:PsiDirectoryNode" />
+              <item name="crm" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRM-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jiebao" type="462c0819:PsiDirectoryNode" />
+              <item name="platfrom" type="462c0819:PsiDirectoryNode" />
+              <item name="crm" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRM-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jiebao" type="462c0819:PsiDirectoryNode" />
+              <item name="platfrom" type="462c0819:PsiDirectoryNode" />
+              <item name="crm" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRM-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jiebao" type="462c0819:PsiDirectoryNode" />
+              <item name="platfrom" type="462c0819:PsiDirectoryNode" />
+              <item name="job" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRM-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jiebao" type="462c0819:PsiDirectoryNode" />
+              <item name="platfrom" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRM-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jiebao" type="462c0819:PsiDirectoryNode" />
+              <item name="platfrom" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRM-backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -497,6 +429,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -506,14 +439,14 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564455879975" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584437054566" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.24476296" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -538,7 +471,20 @@
     </option>
     <option name="contentProportion" value="0.1420765" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.JiebaoApplication (1)">
+    <configuration name="JiebaoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="CRM-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jiebao.platfrom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jiebao.platfrom.JiebaoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JiebaoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="jiebao_shiro_jwt" />
       <extension name="coverage">
@@ -554,6 +500,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.JiebaoApplication (1)" />
         <item itemvalue="Spring Boot.JiebaoApplication" />
       </list>
     </recent_temporary>
@@ -582,17 +529,35 @@
       <workItem from="1564367123683" duration="3268000" />
       <workItem from="1564451112469" duration="2231000" />
       <workItem from="1582179435419" duration="24000" />
+      <workItem from="1583477198467" duration="310000" />
+      <workItem from="1583477536085" duration="1488000" />
+      <workItem from="1583714586042" duration="655000" />
+      <workItem from="1583800869745" duration="6788000" />
+      <workItem from="1583896959922" duration="8148000" />
+      <workItem from="1583975966212" duration="6468000" />
+      <workItem from="1584260876991" duration="5968000" />
+      <workItem from="1584321059020" duration="15475000" />
+      <workItem from="1584405924060" duration="6599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28635000" />
+    <option name="totallyTimeSpent" value="80534000" />
+  </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="53" y="61" width="1940" height="953" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13166311" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.331383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -606,20 +571,20 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286334" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32967034" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32967034" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.76628894" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32844934" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32844934" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49932975" weight="0.7294617" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32844934" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49932975" visible="true" weight="0.07570208" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.11861702" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -632,214 +597,373 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/utils/AddressUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/dao/MenuMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="154">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/domain/JiebaoConstant.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/job/config/ScheduleConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="-396">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/domain/JiebaoResponse.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/dao/LogMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="88">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/impl/LogServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/dao/LoginLogMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="134" column="17" selection-start-line="134" selection-start-column="17" selection-end-line="134" selection-end-column="17" />
+        <state relative-caret-position="110">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/properties/ShiroProperties.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/dao/RoleMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="88">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/properties/JiebaoProperties.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/dao/TestMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="88">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/dao/DictMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/dao/DeptMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/dao/UserRoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/domain/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/domain/CrmContractOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/config/DataSource.java" />
+    <entry file="jar://F:/mavencangku/com/baomidou/dynamic-datasource-spring-boot-starter/2.5.1/dynamic-datasource-spring-boot-starter-2.5.1.jar!/com/baomidou/dynamic/datasource/spring/boot/autoconfigure/DynamicDataSourceProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2070#2071#0" expanded="true" />
+            <element signature="e#2114#2115#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/utils/JiebaoUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="43" column="57" lean-forward="true" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/utils/TreeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1638">
-          <caret line="96" column="26" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/exception/JiebaoException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/aspect/LogAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+        <state relative-caret-position="5">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/config/P6spySqlFormatConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="198">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jiebao.sql" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/templates/controller.java.ftl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/error/error.2019-06-20.log" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/impl/TestServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/converter/TimeConverter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/config/RedisConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        <state relative-caret-position="241">
+          <caret line="138" column="6" selection-start-line="138" selection-start-column="6" selection-end-line="138" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/impl/RoleMenuServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/config/MybatisPlusConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="22" column="72" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="72" />
+        <state relative-caret-position="132">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/config/AsyncExecutorPoolConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/service/TestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/controller/TestController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/web/controller/MovieController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+        <state relative-caret-position="110">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/controller/BaseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="132">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/domain/Test.java">
+    <entry file="jar://F:/mavencangku/com/baomidou/dynamic-datasource-spring-boot-starter/2.5.1/dynamic-datasource-spring-boot-starter-2.5.1.jar!/com/baomidou/dynamic/datasource/annotation/DS.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="19" column="86" lean-forward="true" selection-start-line="19" selection-start-column="86" selection-end-line="19" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/generator/CodeGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/utils/MD5Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="e#693#694#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/banner.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="75" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/info/info.2019-06-21.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1512" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/error/error.2019-06-21.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-486" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/JiebaoApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="264">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/domain/CrmData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/service/impl/CrmContractOrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/domain/CrmPaymentBill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-764">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/service/ICrmContractOrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/mavencangku/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar!/org/apache/catalina/core/ApplicationFilterChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/domain/CrmPaymentRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ValidationMessages.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/JiebaoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        <state relative-caret-position="176">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spy.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/dao/CrmContractOrderMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+        <state relative-caret-position="313">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="757" column="41" lean-forward="true" selection-start-line="757" selection-start-column="41" selection-end-line="757" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/job/util/ScheduleUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmPurchaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmSalesOpportunityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmRevenueExpenditureController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmReimburseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmPurchaseApplyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmProjectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmPaymentRecordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmPaymentPlanController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmPaymentBillController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmCustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmCashbackRecordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmCashbackPlanController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmBillRecordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/mavencangku/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar!/javax/servlet/http/HttpServletResponse.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-699">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/common/domain/QueryRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/controller/CrmContractOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/system/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="173" column="54" selection-start-line="173" selection-start-column="54" selection-end-line="173" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/mavencangku/com/wuwenze/ExcelKit/2.0.7/ExcelKit-2.0.7.jar!/com/wuwenze/poi/ExcelKit.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1062">
+          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiebao/platfrom/crm/domain/CrmOrderMonth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
