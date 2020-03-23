@@ -1,43 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.jiebao.platfrom.crm.dao.CrmContractOrderMapper">
-
-  <!--  <resultMap id="BaseResultMap" type="com.jiebao.platfrom.crm.domain.CrmContractOrder">
-        <id column="id" jdbcType="VARCHAR" property="id"/>
-        <result column="ht_id" jdbcType="INTEGER" property="htId"/>
-        <result column="ht_customerid" jdbcType="VARCHAR" property="htCustomerid"/>
-        <result column="ht_date" jdbcType="VARCHAR" property="htDate"/>
-        <result column="ht_preside" jdbcType="VARCHAR" property="htPreside"/>
-        <result column="ht_state" jdbcType="VARCHAR" property="htState"/>
-        <result column="ht_summoney" jdbcType="DECIMAL" property="htSummoney"/>
-        <result column="ht_title" jdbcType="VARCHAR" property="htTitle"/>
-        <result column="ht_number" jdbcType="VARCHAR" property="htNumber"/>
-        <result column="ht_lxrid" jdbcType="VARCHAR" property="htLxrid"/>
-        <result column="ht_lxrinfo" jdbcType="VARCHAR" property="htLxrinfo"/>
-        <result column="ht_begindate" jdbcType="VARCHAR" property="htBegindate"/>
-        <result column="ht_moneyzhekou" jdbcType="DECIMAL" property="htMoneyzhekou"/>
-        <result column="ht_kjmoney" jdbcType="DECIMAL" property="htKjmoney"/>
-        <result column="ht_fjmoneylx" jdbcType="VARCHAR" property="htFjmoneylx"/>
-        <result column="ht_fjmoney" jdbcType="VARCHAR" property="htFjmoney"/>
-        <result column="ht_enddate" jdbcType="VARCHAR" property="htEnddate"/>
-        <result column="ht_wuliutype" jdbcType="VARCHAR" property="htWuliutype"/>
-        <result column="fahuoaddressid" jdbcType="VARCHAR" property="fahuoaddressid"/>
-        <result column="ht_contract" jdbcType="VARCHAR" property="htContract"/>
-        <result column="ht_remark" jdbcType="VARCHAR" property="htRemark"/>
-        <result column="afterMoney" jdbcType="DECIMAL" property="afterMoney"/>
-        <result column="waitMoney" jdbcType="DECIMAL" property="waitMoney"/>
-    </resultMap>-->
-
-
-
-
-
     <select id="findContractOrderDetail" resultType="Map" >
-    SELECT cco.ht_id,cco.ht_customerid,cco.ht_title,STR_TO_DATE(cco.ht_date,'%Y/%m/%d %H:%i:%s') as 'ht_date',cco.ht_summoney,c.cmoney as 'afterMoney',
+    SELECT cco.ht_id,cco.ht_customerid,cco.ht_title,cco.ht_preside,
+    STR_TO_DATE(cco.ht_date,'%Y/%m/%d %H:%i:%s') as 'ht_date',cco.ht_summoney,c.cmoney as 'afterMoney',
     (cco.ht_summoney-c.cmoney) as 'waitMoney'
-    FROM crm_contract_order cco ,
+    FROM crm_contract_order cco left join
     (SELECT ccr.hk_htid as id,sum(ccr.hk_money) as cmoney FROM crm_cashback_record ccr GROUP BY ccr.hk_htid) c
-    WHERE cco.ht_id = c.id
+    on cco.ht_id = c.id where 1=1
+        <if test="ht_id != null and ht_id !=''">
+           And      cco.ht_id = #{ht_id}
+        </if>
+        <if test="waitMoney != null and waitMoney !=''">
+            And (cco.ht_summoney-c.cmoney)  > #{waitMoney}
+        </if>
         <if test="createTimeFrom != null and createTimeFrom !=''">
             And STR_TO_DATE(cco.ht_date,'%Y/%m/%d %H:%i:%s') &gt; #{createTimeFrom}
         </if>
@@ -45,9 +21,14 @@
             And STR_TO_DATE(cco.ht_date,'%Y/%m/%d %H:%i:%s') &lt; #{createTimeTo}
         </if>
     ORDER BY cco.ht_date DESC
-
-
     </select>
 
-
+    <select id="findContractOrderById" resultType="crmContractOrder">
+    SELECT *,c.cmoney as 'afterMoney',
+    (cco.ht_summoney-c.cmoney) as 'waitMoney'
+    FROM crm_contract_order cco left join
+    (SELECT ccr.hk_htid as cid,sum(ccr.hk_money) as cmoney FROM crm_cashback_record ccr GROUP BY ccr.hk_htid) c
+    on cco.ht_id = c.cid
+      where cco.ht_id = #{billParentid}
+    </select>
 </mapper>

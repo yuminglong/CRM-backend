@@ -23,7 +23,7 @@ public class CrmBillRecordServiceImpl extends ServiceImpl<CrmBillRecordMapper, C
     public IPage<CrmBillRecord> findBillDetail(CrmBillRecord crmBillRecord, QueryRequest queryRequest) {
         try {
             Page<CrmBillRecord> page = new Page<>();
-            SortUtil.handlePageSort(queryRequest, page, "bill_parentid", JiebaoConstant.ORDER_ASC, false);
+            SortUtil.handlePageSort(queryRequest, page, "cbr.bill_date", JiebaoConstant.ORDER_ASC, false);
             return this.baseMapper.findBillDetail(page, crmBillRecord);
         } catch (Exception e) {
             log.error("查询用户异常", e);

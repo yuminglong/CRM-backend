@@ -138,7 +138,7 @@ public class CrmContractOrder extends Model<CrmContractOrder> implements Seriali
      * 待收款金额
      */
     @TableField(exist = false)
-    private BigDecimal waitMoney;
+    private Integer waitMoney;
 
     @TableField(exist = false)
     private transient String createTimeFrom;

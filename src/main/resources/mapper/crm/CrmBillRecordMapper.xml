@@ -3,9 +3,15 @@
 <mapper namespace="com.jiebao.platfrom.crm.dao.CrmBillRecordMapper">
 
     <select id="findBillDetail" resultType="crmBillRecord" >
-        SELECT  cbr.bill_parentid,cbr.bill_money,STR_TO_DATE(cbr.bill_date,'%Y/%m/%d %H:%i:%s') as 'bill_date',cbr.bill_no,cbr.bill_hkid,cbr.bill_hkstate,cbr.bill_remark
+        SELECT  cbr.bill_parentid,cbr.bill_money,STR_TO_DATE(cbr.bill_date,'%Y/%m/%d %H:%i:%s') as 'bill_date',
+        cbr.bill_no,cbr.bill_hkid,cbr.bill_hkstate,cbr.bill_remark
          FROM crm_bill_record cbr WHERE 1=1
-
+        <if test="crmBillRecord.billParentid != null and crmBillRecord.billParentid != ''">
+            AND cbr.bill_parentid = #{crmBillRecord.billParentid}
+        </if>
+        <if test="crmBillRecord.billHkstate != null and crmBillRecord.billHkstate != ''">
+            AND cbr.bill_hkstate = #{crmBillRecord.billHkstate}
+        </if>
         <if test="crmBillRecord.createTimeFrom != null and crmBillRecord.createTimeFrom !=''">
             And STR_TO_DATE(cbr.bill_date,'%Y/%m/%d %H:%i:%s') &gt; #{crmBillRecord.createTimeFrom}
         </if>
@@ -13,8 +19,6 @@
             And STR_TO_DATE(cbr.bill_date,'%Y/%m/%d %H:%i:%s') &lt; #{crmBillRecord.createTimeTo}
         </if>
         ORDER BY cbr.bill_date DESC
-
-
     </select>
 
 

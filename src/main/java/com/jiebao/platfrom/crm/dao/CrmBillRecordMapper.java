@@ -18,4 +18,5 @@ public interface CrmBillRecordMapper extends BaseMapper<CrmBillRecord> {
      * @return
      */
     IPage<CrmBillRecord> findBillDetail(Page page, @Param("crmBillRecord") CrmBillRecord crmBillRecord);
+
 }

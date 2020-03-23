@@ -30,7 +30,7 @@ public class CrmBillRecordController extends BaseController {
     public Map<String, Object> crmBillRecord(QueryRequest queryRequest, CrmBillRecord crmBillRecord) {
 
         Map<String, Object> dataTable = getDataTable(iCrmBillRecordService.findBillDetail(crmBillRecord, queryRequest));
-        System.out.println(dataTable);
+        //System.out.println(dataTable);
         return dataTable;
     }
 
