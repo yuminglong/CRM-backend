@@ -92,6 +92,7 @@ public class CrmPurchaseController {
             newmap.put("总计",sum);
             map.add(newmap);
             ExcelKit.$Export(CrmPay.class, response).downXlsx(map, false);
+
         } catch (Exception e) {
             message = "导出Excel失败";
             log.error(message, e);
