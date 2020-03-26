@@ -60,7 +60,7 @@ public class CrmDataController extends BaseController {
      * @throws JiebaoException
      */
     @PutMapping
-    public void updateUser(@Valid CrmData crmData) throws JiebaoException {
+    public void updateCrmData(@Valid CrmData crmData) throws JiebaoException {
         try {
             this.iCrmDataService.updateById(crmData);
         } catch (Exception e) {
