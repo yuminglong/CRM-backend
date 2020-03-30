@@ -12,6 +12,7 @@ import com.jiebao.platfrom.crm.domain.CrmContractOrder;
 import com.jiebao.platfrom.crm.domain.CrmOrderMonth;
 import com.jiebao.platfrom.crm.service.ICrmContractOrderService;
 import com.jiebao.platfrom.system.domain.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import lombok.extern.slf4j.Slf4j;
 
@@ -33,7 +34,6 @@ public class CrmContractOrderServiceImpl extends ServiceImpl<CrmContractOrderMap
 
     @Override
     public List<CrmOrderMonth> crmContractOrderList( String year, String month) {
-
         return crmContractOrderMapper.crmContractOrderList( year, month);
     }
 
