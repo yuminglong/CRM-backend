@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
+import com.wuwenze.poi.annotation.Excel;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -20,6 +21,7 @@ import lombok.experimental.Accessors;
 @TableName("crm_purchase")
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
+@Excel("开支情况汇总表")
 public class CrmPurchase extends Model<CrmPurchase> implements Serializable {
 
     private static final long serialVersionUID = 2725520526379860823L;

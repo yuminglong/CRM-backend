@@ -20,6 +20,7 @@ import java.util.Map;
 /**
  * @author Sinliz
  */
+@Slf4j
 @RestController
 @RequestMapping("/crm/contract-order")
 @DS("crm")
@@ -42,4 +43,14 @@ public class CrmContractOrderController extends BaseController {
     }
 
 
+    public void export(String year, String month, HttpServletResponse response) throws JiebaoException {
+        try {
+            List<CrmOrderMonth> crmOrderMonths = orderService.crmContractOrderList(year, month);
+            ExcelKit.$Export(CrmOrderMonth.class, response).downXlsx(crmOrderMonths, false);
+        } catch (Exception e) {
+            String message = "导出Excel失败";
+            log.error(message, e);
+            throw new JiebaoException(message);
+        }
+    }
 }

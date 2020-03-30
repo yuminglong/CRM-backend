@@ -13,6 +13,7 @@ import java.util.Map;
 /**
  * @author Sinliz
  */
+@Repository
 public interface CrmContractOrderMapper extends BaseMapper<CrmContractOrder> {
 
 
@@ -34,3 +35,4 @@ public interface CrmContractOrderMapper extends BaseMapper<CrmContractOrder> {
      */
     CrmContractOrder findContractOrderById(String billParentid);
 }
+// and c.ht_date like '#{year}'+'/#{month}%'

@@ -4,20 +4,20 @@ package com.jiebao.platfrom.crm.controller;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.dynamic.datasource.annotation.DS;
+import com.jiebao.platfrom.common.annotation.Log;
 import com.jiebao.platfrom.common.controller.BaseController;
 import com.jiebao.platfrom.common.domain.QueryRequest;
 import com.jiebao.platfrom.common.exception.JiebaoException;
 import com.jiebao.platfrom.crm.domain.CrmData;
 import com.jiebao.platfrom.crm.service.ICrmDataService;
 import com.jiebao.platfrom.crm.util.ApiKit;
+import com.jiebao.platfrom.system.domain.User;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
-import org.springframework.web.bind.annotation.RestController;
-
+import javax.validation.Valid;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.math.BigDecimal;
@@ -35,6 +35,7 @@ import java.util.Map;
 @DS("crm")  //切换数据源
 public class CrmDataController extends BaseController {
 
+    private String message;
     @Autowired
     private ICrmDataService iCrmDataService;
 
@@ -47,9 +48,25 @@ public class CrmDataController extends BaseController {
     //默认一次读取数据条数
     private final String pageSize = "50";
 
+
     @GetMapping(value = "/crmDataList")
     public Map<String, Object> crmDataList(QueryRequest request, CrmData crmData) {
         return getDataTable(iCrmDataService.getCrmDataList(request, crmData));
+    }
+
+    /**
+     * 修改接口
+     * @param crmData
+     * @throws JiebaoException
+     */
+    @PutMapping
+    public void updateCrmData(@Valid CrmData crmData) throws JiebaoException {
+        try {
+            this.iCrmDataService.updateById(crmData);
+        } catch (Exception e) {
+            message = "修改接口失败";
+            throw new JiebaoException(message);
+        }
     }
 
     /**
