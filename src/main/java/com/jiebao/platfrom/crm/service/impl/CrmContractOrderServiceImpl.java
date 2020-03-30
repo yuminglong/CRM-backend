@@ -32,10 +32,6 @@ public class CrmContractOrderServiceImpl extends ServiceImpl<CrmContractOrderMap
     @Autowired
     CrmContractOrderMapper crmContractOrderMapper;
 
-  /*  @Override
-    public List<CrmOrderMonth> crmContractOrderList( String year, String month) {
-        return crmContractOrderMapper.crmContractOrderList( year, month);
-    }*/
 
     @Override
     public List<Map<String, Object>> findContractOrderDetail(String createTimeFrom, String createTimeTo, String ht_id, String waitMoney) {
@@ -50,7 +46,11 @@ public class CrmContractOrderServiceImpl extends ServiceImpl<CrmContractOrderMap
 
     @Override
     public CrmContractOrder findContractOrderById(String billParentid) {
-       // return baseMapper.selectOne(new LambdaQueryWrapper<CrmContractOrder>().eq(CrmContractOrder::getHtId, billParentid));
         return this.baseMapper.findContractOrderById(billParentid);
+    }
+
+    @Override
+    public List<CrmOrderMonth> crmContractOrderList( String year, String month) {
+        return crmContractOrderMapper.crmContractOrderList( year, month);
     }
 }

@@ -39,12 +39,16 @@ public class CrmContractOrderController extends BaseController {
 
     @GetMapping("/findContractOrderById/{billParentid}")
     public CrmContractOrder findContractOrderById(@NotBlank(message = "{required}") @PathVariable String billParentid) {
-        System.out.println(billParentid + "--------" + iCrmContractOrderService.findContractOrderById(billParentid));
         return iCrmContractOrderService.findContractOrderById(billParentid);
     }
 
 
-    //月销售记录整理
+    /**
+     * 月销售记录整理
+     * @param month
+     * @param year
+     * @return
+     */
     @GetMapping("List")
     public List<CrmOrderMonth> crmContractOrderList(String month, String year) {
         return iCrmContractOrderService.crmContractOrderList(year, month);
