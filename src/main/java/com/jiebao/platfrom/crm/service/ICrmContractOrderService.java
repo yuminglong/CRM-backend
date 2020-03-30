@@ -36,4 +36,6 @@ public interface ICrmContractOrderService extends IService<CrmContractOrder> {
      * @return
      */
     CrmContractOrder findContractOrderById(String billParentid);
+
+    List<CrmOrderMonth> crmContractOrderList( String year, String month);  //参数月份
 }
