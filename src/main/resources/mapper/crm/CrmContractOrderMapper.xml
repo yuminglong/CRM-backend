@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.jiebao.platfrom.gen.mapper.CrmContractOrderMapper">
+<mapper namespace="com.jiebao.platfrom.crm.dao.CrmContractOrderMapper">
+    <select id="findContractOrderDetail" resultType="Map" >
+    SELECT cco.ht_id,cco.ht_customerid,cco.ht_title,cco.ht_preside,
+    STR_TO_DATE(cco.ht_date,'%Y/%m/%d %H:%i:%s') as 'ht_date',cco.ht_summoney,c.cmoney as 'afterMoney',
+    (cco.ht_summoney-c.cmoney) as 'waitMoney'
+    FROM crm_contract_order cco left join
+    (SELECT ccr.hk_htid as id,sum(ccr.hk_money) as cmoney FROM crm_cashback_record ccr GROUP BY ccr.hk_htid) c
+    on cco.ht_id = c.id where 1=1
+        <if test="ht_id != null and ht_id !=''">
+           And      cco.ht_id = #{ht_id}
+        </if>
+        <if test="waitMoney != null and waitMoney !=''">
+            And (cco.ht_summoney-c.cmoney)  > #{waitMoney}
+        </if>
+        <if test="createTimeFrom != null and createTimeFrom !=''">
+            And STR_TO_DATE(cco.ht_date,'%Y/%m/%d %H:%i:%s') &gt; #{createTimeFrom}
+        </if>
+        <if test="createTimeTo!= null and createTimeTo !=''">
+            And STR_TO_DATE(cco.ht_date,'%Y/%m/%d %H:%i:%s') &lt; #{createTimeTo}
+        </if>
+    ORDER BY cco.ht_date DESC
+    </select>
 
+    <select id="findContractOrderById" resultType="crmContractOrder">
+    SELECT *,c.cmoney as 'afterMoney',
+    (cco.ht_summoney-c.cmoney) as 'waitMoney'
+    FROM crm_contract_order cco left join
+    (SELECT ccr.hk_htid as cid,sum(ccr.hk_money) as cmoney FROM crm_cashback_record ccr GROUP BY ccr.hk_htid) c
+    on cco.ht_id = c.cid
+      where cco.ht_id = #{billParentid}
+    </select>
 </mapper>
