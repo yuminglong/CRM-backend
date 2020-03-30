@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.io.Serializable;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
@@ -96,6 +97,11 @@ public class CrmBillRecord extends Model<CrmBillRecord> implements Serializable 
      * 备注
      */
     private String billRemark;
+
+    @TableField(exist = false)
+    private transient String createTimeFrom;
+    @TableField(exist = false)
+    private transient String createTimeTo;
 
 
 }

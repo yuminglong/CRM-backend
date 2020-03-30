@@ -1,25 +1,21 @@
 package com.jiebao.platfrom.crm.controller;
 
-
 import com.baomidou.dynamic.datasource.annotation.DS;
+import com.jiebao.platfrom.common.controller.BaseController;
 import com.jiebao.platfrom.common.domain.QueryRequest;
-import com.jiebao.platfrom.common.exception.JiebaoException;
-import com.jiebao.platfrom.crm.domain.CrmOrderMonth;
+import com.jiebao.platfrom.crm.domain.CrmContractOrder;
 import com.jiebao.platfrom.crm.service.ICrmContractOrderService;
-import com.jiebao.platfrom.system.domain.User;
-import com.wuwenze.poi.ExcelKit;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.http.HttpServletResponse;
+import javax.validation.constraints.NotBlank;
+import java.math.BigDecimal;
 import java.util.List;
-
+import java.util.Map;
 
 /**
  * @author Sinliz
@@ -28,17 +24,24 @@ import java.util.List;
 @RestController
 @RequestMapping("/crm/contract-order")
 @DS("crm")
-public class CrmContractOrderController {
-    @Autowired
-    ICrmContractOrderService orderService;
+public class CrmContractOrderController extends BaseController {
 
-    //月销售记录整理
-    @GetMapping("List")
-    public List<CrmOrderMonth> crmContractOrderList(String month, String year) {
-        return orderService.crmContractOrderList(year, month);
+
+    @Autowired
+    ICrmContractOrderService iCrmContractOrderService;
+
+    @GetMapping
+    public List<Map<String, Object>> collect(String createTimeFrom, String createTimeTo, String ht_id, String waitMoney) {
+        List<Map<String, Object>> contractOrderDetail = iCrmContractOrderService.findContractOrderDetail(createTimeFrom, createTimeTo, ht_id, waitMoney);
+        return contractOrderDetail;
     }
 
-    @PostMapping("excel")
+    @GetMapping("/findContractOrderById/{billParentid}")
+    public CrmContractOrder findContractOrderById(@NotBlank(message = "{required}") @PathVariable String billParentid) {
+        System.out.println(billParentid + "--------" + iCrmContractOrderService.findContractOrderById(billParentid));
+        return iCrmContractOrderService.findContractOrderById(billParentid);
+    }
+
 
     public void export(String year, String month, HttpServletResponse response) throws JiebaoException {
         try {
