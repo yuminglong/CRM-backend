@@ -5,6 +5,7 @@ import com.jiebao.platfrom.common.controller.BaseController;
 import com.jiebao.platfrom.common.domain.QueryRequest;
 import com.jiebao.platfrom.crm.domain.CrmContractOrder;
 import com.jiebao.platfrom.crm.service.ICrmContractOrderService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -43,7 +44,7 @@ public class CrmContractOrderController extends BaseController {
     }
 
 
-    public void export(String year, String month, HttpServletResponse response) throws JiebaoException {
+  /*  public void export(String year, String month, HttpServletResponse response) throws JiebaoException {
         try {
             List<CrmOrderMonth> crmOrderMonths = orderService.crmContractOrderList(year, month);
             ExcelKit.$Export(CrmOrderMonth.class, response).downXlsx(crmOrderMonths, false);
@@ -52,5 +53,5 @@ public class CrmContractOrderController extends BaseController {
             log.error(message, e);
             throw new JiebaoException(message);
         }
-    }
+    }*/
 }
