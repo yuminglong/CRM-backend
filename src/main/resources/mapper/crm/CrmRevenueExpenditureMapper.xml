@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.jiebao.platfrom.gen.mapper.CrmRevenueExpenditureMapper">
+<mapper namespace="com.jiebao.platfrom.crm.dao.CrmRevenueExpenditureMapper">
+    <select id="payDetail" resultType="Map" >
+        SELECT
+        e.mdate AS '支出日期',e.customerid AS '对应客户',e.mremark AS '备注', e.jingban AS '开支人员' ,e.moneyout AS '开支金额'
+        FROM `crm_revenue_expenditure` e
+        WHERE
+        DATE_FORMAT( e.mdate, '%Y%m' ) = DATE_FORMAT(#{date} , '%Y%m' )
+    </select>
 
 </mapper>

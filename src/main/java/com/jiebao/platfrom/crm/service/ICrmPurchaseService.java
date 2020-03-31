@@ -11,5 +11,20 @@ import java.util.Map;
  * @author Sinliz
  */
 public interface ICrmPurchaseService extends IService<CrmPurchase> {
+
+    /**
+     * 开支情况汇总
+     * @param date
+     * @return
+     */
     List<Map<String, Object>> getcrmPay(String date);
+
+
+    /**
+     * 开支明细
+     * @param date
+     * @param choose
+     * @return
+     */
+    List<Map<String, Object>> payDetail(String date,String choose);
 }

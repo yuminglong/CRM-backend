@@ -1,5 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.jiebao.platfrom.gen.mapper.CrmPurchaseMapper">
+<mapper namespace="com.jiebao.platfrom.crm.dao.CrmPurchaseMapper">
+    <select id="getcrmPay"  resultType="Map" >
+         SELECT *,(g.`采购支出`+g.`收支流水`+g.`费用报销`) as '总计' FROM
+        (
+        SELECT * FROM
+        (
+        SELECT * FROM
+        (
+        SELECT * FROM
+        (
+            SELECT DATE_FORMAT(#{date}, '%Y-%m') AS `month1`
+            UNION SELECT DATE_FORMAT((#{date} - INTERVAL 1 MONTH), '%Y-%m') AS `month`
+            UNION SELECT DATE_FORMAT((#{date} - INTERVAL 2 MONTH), '%Y-%m') AS `month`
+            UNION SELECT DATE_FORMAT((#{date} - INTERVAL 3 MONTH), '%Y-%m') AS `month`
+            UNION SELECT DATE_FORMAT((#{date} - INTERVAL 4 MONTH), '%Y-%m') AS `month`
+            UNION SELECT DATE_FORMAT((#{date} - INTERVAL 5 MONTH), '%Y-%m') AS `month`
+            UNION SELECT DATE_FORMAT((#{date} - INTERVAL 6 MONTH), '%Y-%m') AS `month`
+            UNION SELECT DATE_FORMAT((#{date} - INTERVAL 7 MONTH), '%Y-%m') AS `month`
+            UNION SELECT DATE_FORMAT((#{date} - INTERVAL 8 MONTH), '%Y-%m') AS `month`
+            UNION SELECT DATE_FORMAT((#{date} - INTERVAL 9 MONTH), '%Y-%m') AS `month`
+            UNION SELECT DATE_FORMAT((#{date} - INTERVAL 10 MONTH), '%Y-%m') AS `month`
+            UNION SELECT DATE_FORMAT((#{date} - INTERVAL 11 MONTH), '%Y-%m') AS `month`
+        ) AS a
+        left join
+        (
+        select DATE_FORMAT(cgdate, '%Y-%m') as `month2`,sum(summoney) as '采购支出'
+        from crm_purchase
+         group by year(cgdate),month(cgdate)
+        ) AS b
+        on
+        a.month1=b.month2
+        )as c
+        left join
+        (
+        select DATE_FORMAT(mdate, '%Y-%m') as `month3`,sum(moneyout) as '收支流水'
+        from crm_revenue_expenditure
+         group by year(mdate),month(mdate)
+        ) as d
+        on
+        c.month1 = d.month3
+        ) as e
+        left join
+        (
+        select DATE_FORMAT(fy_askdate, '%Y-%m') as `month4`,sum(fy_summoney) as '费用报销'
+        from crm_reimburse
+         group by year(fy_askdate),month(fy_askdate)
+        ) as f
+        on
+        e.month3 = f.month4
+        ) as g
+    </select>
 
+    <select id="payDetail" resultType="Map" >
+        SELECT
+        p.cgdate as '支出日期',p.gysid AS '对应客户' ,p.cgname AS '备注', p.empid AS '开支人员', p.summoney AS '开支金额'
+        FROM crm_purchase p
+        WHERE
+        DATE_FORMAT( p.cgdate, '%Y%m' ) = DATE_FORMAT(#{date} , '%Y%m' )
+    </select>
 </mapper>

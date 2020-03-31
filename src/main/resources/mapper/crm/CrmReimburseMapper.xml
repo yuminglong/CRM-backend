@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.jiebao.platfrom.gen.mapper.CrmReimburseMapper">
-
+<mapper namespace="com.jiebao.platfrom.crm.dao.CrmReimburseMapper">
+    <select id="payDetail" resultType="Map" >
+        SELECT
+       r.fy_askdate as '支出日期',r.fy_customerid AS '对应客户' ,r.fy_title AS '备注', r.fy_empid AS '开支人员', r.fy_summoney AS '开支金额'
+        FROM crm_reimburse r
+        WHERE
+        DATE_FORMAT( r.fy_askdate, '%Y%m' ) = DATE_FORMAT(#{date} , '%Y%m' )
+    </select>
 </mapper>

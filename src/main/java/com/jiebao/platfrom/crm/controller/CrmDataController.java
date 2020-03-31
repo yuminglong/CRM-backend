@@ -21,10 +21,8 @@ import javax.validation.Valid;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.math.BigDecimal;
-import java.util.Arrays;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 /**
  * 金智CRM数据接口-数据处理
@@ -106,11 +104,23 @@ public class CrmDataController extends BaseController {
     }
 
     /**
+     * 更新时间
+     * @param crmData
+     */
+    public void updateTime(CrmData crmData){
+        SimpleDateFormat sdf =new SimpleDateFormat("yyyy-MM-dd HH:mm:ss" );
+        Date d = new Date();
+        crmData.setUpdateTime( sdf.format(d));
+        iCrmDataService.updateById(crmData);
+    }
+
+    /**
      * 根据数据接口信息，分页读取接口数据
      * @param crmData   接口信息
      * @param currentPage   当前页
      */
     private void processDomain (CrmData crmData, Integer currentPage) {
+        this.updateTime(crmData);
         Map postMap = new LinkedHashMap<>();
         postMap.put("stamp", System.currentTimeMillis() / 1000);
         postMap.put("datatype", crmData.getDataTypeId());
