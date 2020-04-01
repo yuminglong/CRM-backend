@@ -48,7 +48,7 @@
          group by year(fy_askdate),month(fy_askdate)
         ) as f
         on
-        e.month3 = f.month4
+        e.month1 = f.month4
         ) as g
     </select>
 
