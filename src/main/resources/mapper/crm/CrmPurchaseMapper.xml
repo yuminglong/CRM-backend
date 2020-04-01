@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.jiebao.platfrom.crm.dao.CrmPurchaseMapper">
     <select id="getcrmPay"  resultType="Map" >
-         SELECT *,(g.`采购支出`+g.`收支流水`+g.`费用报销`) as '总计' FROM
+        SELECT *,(ifnull(g.`采购支出`,0)+ifnull(g.`收支流水`,0)+ifnull(g.`费用报销`,0)) as '总计' FROM
         (
         SELECT * FROM
         (
