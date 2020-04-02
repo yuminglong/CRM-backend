@@ -8,8 +8,8 @@
     FROM crm_contract_order cco left join
     (SELECT ccr.hk_htid as id,sum(ccr.hk_money) as cmoney FROM crm_cashback_record ccr GROUP BY ccr.hk_htid) c
     on cco.ht_id = c.id where 1=1
-        <if test="ht_id != null and ht_id !=''">
-           And      cco.ht_id = #{ht_id}
+        <if test="htId != null and htId !=''">
+           And      cco.ht_id = #{htId}
         </if>
         <if test="waitMoney != null and waitMoney !=''">
             And (cco.ht_summoney-c.cmoney)  > #{waitMoney}

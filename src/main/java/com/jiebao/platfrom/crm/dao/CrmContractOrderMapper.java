@@ -3,6 +3,7 @@ package com.jiebao.platfrom.crm.dao;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.jiebao.platfrom.common.domain.QueryRequest;
 import com.jiebao.platfrom.crm.domain.CrmContractOrder;
 import com.jiebao.platfrom.crm.domain.CrmOrderMonth;
 import org.apache.ibatis.annotations.Param;
@@ -22,13 +23,10 @@ public interface CrmContractOrderMapper extends BaseMapper<CrmContractOrder> {
 
     /**
      * 查询所有合同详情
-     * @param createTimeFrom 开始时间
-     * @param createTimeTo 结束时间
-     * @param ht_id 订单编号
-     * @param waitMoney 待收款金额
+     * @param crmContractOrder
      * @return
      */
-    List<Map<String, Object>> findContractOrderDetail( @Param("createTimeFrom") String createTimeFrom,@Param("createTimeTo") String createTimeTo,@Param("ht_id") String ht_id,@Param("waitMoney") String waitMoney);
+    List<Map<String, Object>> findContractOrderDetail( CrmContractOrder crmContractOrder);
 
 
     /**

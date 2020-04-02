@@ -34,9 +34,9 @@ public class CrmContractOrderServiceImpl extends ServiceImpl<CrmContractOrderMap
 
 
     @Override
-    public List<Map<String, Object>> findContractOrderDetail(String createTimeFrom, String createTimeTo, String ht_id, String waitMoney) {
+    public List<Map<String, Object>> findContractOrderDetail(CrmContractOrder crmContractOrder) {
         try {
-            return this.baseMapper.findContractOrderDetail(createTimeFrom, createTimeTo, ht_id, waitMoney);
+            return this.baseMapper.findContractOrderDetail(crmContractOrder);
         } catch (Exception e) {
             log.error("查询数据异常", e);
             return null;

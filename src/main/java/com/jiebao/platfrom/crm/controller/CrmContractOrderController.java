@@ -32,8 +32,8 @@ public class CrmContractOrderController extends BaseController {
     ICrmContractOrderService iCrmContractOrderService;
 
     @GetMapping
-    public List<Map<String, Object>> collect(String createTimeFrom, String createTimeTo, String ht_id, String waitMoney) {
-        List<Map<String, Object>> contractOrderDetail = iCrmContractOrderService.findContractOrderDetail(createTimeFrom, createTimeTo, ht_id, waitMoney);
+    public List<Map<String, Object>> collect(CrmContractOrder crmContractOrder) {
+        List<Map<String, Object>> contractOrderDetail = iCrmContractOrderService.findContractOrderDetail(crmContractOrder);
         return contractOrderDetail;
     }
 

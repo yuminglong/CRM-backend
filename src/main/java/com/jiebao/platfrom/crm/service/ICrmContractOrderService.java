@@ -20,14 +20,10 @@ public interface ICrmContractOrderService extends IService<CrmContractOrder> {
 
     /**
      * 查询全部合同详情
-     *
-     * @param createTimeFrom 开始时间
-     * @param createTimeTo   结束时间
-     * @param ht_id          订单编号
-     * @param waitMoney      待收款金额
+     * @param crmContractOrder
      * @return
      */
-    List<Map<String, Object>> findContractOrderDetail(String createTimeFrom, String createTimeTo, String ht_id, String waitMoney);
+    List<Map<String, Object>> findContractOrderDetail(CrmContractOrder crmContractOrder);
 
     /**
      * 通过订单编号查详情
